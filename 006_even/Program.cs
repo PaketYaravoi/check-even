@@ -21,18 +21,11 @@ int number1 = int.Parse(input);
 
 Console.WriteLine($"Число: {number1}");
 
-
-
-
-int max = number1;
-int min = number2;
-
-if(max < number2)
+if(number1 % 2 == 0)
 {
-    max = number2;
-    min = number1;
+    Console.WriteLine($"Число: {number1} четное");
 }
-Console.Write("Ответ: ");
-Console.Write($"max = {max}; ");
-Console.WriteLine($"min = {min}.");
-
+else
+{
+    Console.WriteLine($"Число: {number1} нечетное");
+}
